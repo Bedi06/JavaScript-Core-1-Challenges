@@ -1,7 +1,14 @@
+let arrayOfNumbers = [3134, 5383, 282, 21, 9999];
+
 function calculateLargestNumber(arrayOfNumbers) {
   // Write your code in here
-
-  return 1;
+  let largestNum = 0;
+  for (let i = 0; i <= arrayOfNumbers.length; i++) {
+    if (arrayOfNumbers[i] > largestNum) {
+      largestNum = arrayOfNumbers[i];
+    }
+  }
+  return largestNum;
 }
 
 /**                            */

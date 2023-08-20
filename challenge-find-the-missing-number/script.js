@@ -1,7 +1,15 @@
 function missingNum(arr) {
-  //Write your code in here. You should return the missing the number below.
-  return 0;
+  let missingNumb = 0;
+  for (let i = 1; i <= 10; i++) {
+    let arrSorted = arr.sort((a, b) => a - b);
+
+    if (arrSorted[i - 1] !== i) {
+      missingNumb = i;
+      return missingNumb;
+    }
+  }
 }
+//Write your code in here. You should return the missing the number below.
 
 /**                            */
 /**                            */
